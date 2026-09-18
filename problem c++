@@ -1,0 +1,222 @@
+
+                  Livel 1 
+           *********************
+
+  problem 1 
+
+string name , city;
+int  Age;
+
+cout << "Enter your name : "; cin >> name;
+
+cout << "Enter your Age : "; cin >> Age; 
+
+cout << "your name is : " << name << "your Age is : " << Age;
+
+             problem 2 
+
+
+int num1 = 10;
+int num2  = 20;
+
+cout << "num1 + num2 : " << num1 + num2 << endl;
+cout << "num1 * num2 : " << num1 * num2 << endl;
+cout << "num1 / num2 : " << num1 / num2 << endl;
+
+
+
+
+       problem 3
+
+
+string name;
+int Age , brther;
+
+cout << "Enter your name :"; cin >> name;
+cout << "Enter your Age  : "; cin >> Age; 
+cout << "Entre your Age my brther : "; cin >> brther;
+
+cout << "my name is : " << name <<  endl << "  and i am : " << Age << " yars old " << endl   << "my brther is : " << brther - Age;
+ 
+
+
+       problem 4
+
+
+int num1 = 10;
+int num2 = 20;
+int num3 = 30;
+
+cout << "Total nambers  : " << num1 + num2 + num3 << endl;
+cout << "Average Total :" << num1 + num2 + num3 / 3 << endl;
+
+
+ problem 5
+
+
+int distance;
+int time;
+cout << "How far did you walk :"; cin >> distance;
+cout << "How long have you been walking in a car : "; cin >> time;
+
+cout << " Speed: " << distance / time; 
+
+
+
+
+            problem 6
+
+
+
+int ho;
+int time;
+
+cout << "Working hours per weeek : "; cin >> ho;
+cout << "The price of the hour : "; cin >> time; 
+
+cout << "weekly salary :" << ho * time << endl ;
+cout << "monthly salare  : " << ho * time * 4 << endl;
+
+
+
+
+    problem 7
+
+
+ 
+
+double celsius;
+
+cout << "Enter temperature   : ";
+cin >> celsius; 
+
+cout << "Temperature + : " << (celsius * 9 / 5 ) + 32  ;
+
+
+   problem 8
+
+
+double price;
+double months;
+
+
+cout << "Lone price : ";cin >> price;
+cout << "Number of months : "; cin >> months;
+cout << " Monthly installment " << price / months ;
+
+         
+
+         
+           *************    Medium   ***************
+
+                  problem 8
+
+string name; 
+double Age , courses, price;
+
+cout << "Enter your name : "; cin >> name;
+cout << "Enter your Age : "; cin >> Age;
+cout << "Number of courses : "; cin >> courses;
+cout << " The price of the cours : ";cin >> price;
+
+cout << " Welcome Ms :  " << name  << endl << "Total account : " << courses * price;
+ 
+
+
+                   problem 9
+
+
+double sleep  , day  , week ;
+
+cout << "Number of hours of sleep per day : "; cin >> sleep;
+cout << "The number of days of the week i sleep : "; cin >> day;
+
+
+cout << " Total : " << sleep * day << "  hours : " << endl << "Number of hours of sleep per day : " << sleep;
+
+ idon't understand the issue very much  
+
+
+
+
+                 problem 10
+
+
+
+int x = 10;
+int y = 15;
+cout << " x = : " << x << " y = " << y << endl;
+
+int aziz = x;
+x = y;
+y = aziz;
+cout << " x = : " << x << " y = " << y << endl;
+
+
+
+
+                    problem 11
+
+int A; 
+int B;
+int c;
+
+cout << "A =" << " B " << endl << "B =" << " c" <<endl << "c =" << " A " <<  endl;
+
+
+                   problem 12
+
+
+int num;
+cout << "3 digit number:";cin >> num;
+
+int A1 = num / 100;
+int A2 = num / 10 % 10;
+int A3 = num % 10; 
+
+cout << "sum = : " << A1 + A2 + A3;
+
+
+
+
+                  problem 13 
+
+
+int mints;
+
+cout << "total menutes : "; cin >> mints; 
+
+cout << "hours " << mints / 60 << endl;
+cout << "menutes " << mints % 60;
+
+
+
+                   problem 13 
+
+
+
+
+int price;
+int discound;
+
+cout << "The price : "; cin >> price;
+cout << "the discound :"; cin >> discound;
+
+cout << "final price " << price - discound;
+
+
+
+                   problem 14
+
+
+int num1 = 8;
+int num2 = 20;
+
+cout << "num1 / num2 " << num1 / num2 << endl;
+cout << "num1 / num2 " << num1 % num2;
+
+                                       
+
+                                                            Thank you
+
+
