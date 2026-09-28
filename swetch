@@ -1,0 +1,286 @@
+ 
+*******************************************************************************************************************
+//  Problem 1   switch  
+*****************************************************************************************************************
+char code;
+
+cout << "Enter currency code  E=Eure ,D= Dollar ,p = Pound : "; cin >> code;
+
+switch (code) {
+  
+case 'E' :
+    cout << "100 Eure = " << 100 * 60 << "EGP \n";
+    break;
+case 'D':
+    cout << "100 Dollar = " << 100 * 50 << "EGP \n";
+    break;
+case 'P' :
+    cout << "100 pound = " << 100 * 45 << "EGP \n";
+    break;
+default:
+    cout << "Invalid code \n ";
+
+
+}
+
+//**********************************
+
+             Another Way 
+
+//**********************************
+
+
+char code;
+int amount;
+
+cout << "Enter currency code  E=Eure ,D= Dollar ,p = Pound : "; cin >> code;
+
+cout << "Enter amount : ";cin >> amount;
+
+switch (code) {
+case 'E':
+case 'e' :
+    cout << amount << "Eure = " << amount * 51 << "EGP \n";
+    break;
+
+case 'D':
+case 'd':
+    cout << amount << " Dollar = " << amount * 50 << "EGP \n";
+    break;
+
+case 'P':
+case 'p':
+    cout << amount << " pound = " << amount * 60 << "EGP \n";
+    break;
+
+default :
+    cout << "Invalid code \n ";
+
+}
+
+//*************************************************************************************************************
+
+Problem   2 
+
+//***************************************************************************************************************
+
+
+char mans;
+
+cout << "to enter a number from 1 to 12 : "; cin >> mans;
+
+
+switch (mans) {
+case '1': cout << "1 January = " << 31 << "Jon";
+    break;
+case '2': cout << "2 February = " << 28 << "Feb";
+    break;
+case '3': cout << "3 March = " << 31 << "Mar";
+    break;
+case '4': cout << "4 April = " << 30 << "Apr";
+    break;
+case '5': cout << "5 May = " << 31 << "May";
+    break;
+case '6': cout << "6 June = " << 30 << "Jun";
+    break;
+case '7': cout << "7 July = " << 31 << "Jul";
+    break;
+case '8': cout << "8 August = " << 31 << "Aug";
+    break;
+case '9': cout << "1 September = " << 30 << "sep";
+    break;
+case '10': cout << "10 October = " << 31 << "Oct";
+    break;
+case '11': cout << "11 November = " << 30 << "Nov";
+    break;
+case '12': cout << "12 December = " << 31 << "Dec";
+    break;
+}
+
+
+//*************************************************************************************************************
+
+Problem   3
+
+//************************************************************************************************************
+
+
+char day;
+
+cout << "enter a number from 1 to 7 : "; cin >> day;
+
+switch (day) {
+case '1': cout << "1  Sunday = " << "Weekend";
+    break;
+case '2': cout << "2  Monday = " << "Weekday";
+    break;
+case '3': cout << "3  Tuesday = " << "Weekday";
+    break;
+case '4': cout << "4 Wednesday = " << "Weekday";
+    break;
+case '5': cout << "5 Thursday = " << "Weekday";
+    break;
+case '6': cout << "6  Friday = " << "Weekday";
+    break;
+case '7': cout << "7  Saturday = " << "Weekend";
+    break;
+default:
+    cout << "Invalid code \n ";
+
+}
+
+
+
+
+
+//*************************************************************************************************************
+
+Problem   4
+
+//************************************************************************************************************
+
+
+
+
+char gpa;
+
+cout << " enter their grade (A, B, C, D, F - capital or small) : "; cin >> gpa;
+
+switch (gpa) {
+case 'A'  :
+case 'a': 
+    cout << "Your GPA is:  " << 4.0 ;
+        break;
+case 'B':
+case 'b':
+    cout << "Your GPA is:  " << 3.0;
+    break;
+case 'C':
+case 'c':
+    cout << "Your GPA is:  " << 2.0;
+    break;
+case 'D':
+case 'd':
+    cout << "Your GPA is:  " << 0.0;
+    break;
+default : 
+    cout << "Invalid grade";
+}
+
+
+//*************************************************************************************************************
+
+Problem   5
+
+//**************************************************************************************************************
+
+
+int num;
+
+cout << "enter a mark from 0 to 100 : "; cin >> num;
+
+switch (num /10) {
+case 10 :
+case 9 :
+    cout << "A \n";
+    break;
+case 8:
+    cout << "B \n";
+    break;
+case 7:
+    cout << "C \n";
+    break;
+case 6:
+    cout << "D \n";
+    break;
+default : 
+    cout << "F  /n ";
+
+}
+
+
+//*************************************************************************************************************
+
+Problem   6
+
+//*************************************************************************************************************
+
+char menu;
+
+cout << "1-Say Hello \n 2-Show Date \n 3-Exit : \n "; cin >> menu;
+
+switch (menu) {
+case '1' :
+    cout << "Example Output : " << "Say Hello \n";
+    break;
+case '2':
+    cout << "Example Output : " << "Show Date \n";
+    break;
+case '3':
+    cout << "Example Output : " << " Exit  \n";
+    break;
+default : 
+    cout << "Error";
+
+}
+
+
+
+
+//*************************************************************************************************************
+
+Problem   7
+
+//*************************************************************************************************************
+
+
+int a, b;
+
+cout << "Enter two number : ";cin >> a >> b;
+
+if (a + b == 10 )
+{
+    cout << "true";
+}
+else{
+
+cout << "false";
+
+   }
+
+                       ********  دي problem  البشمهندسه قلبها كبير وهتعدي  ********
+ 
+
+
+//*************************************************************************************************************
+
+ Problem   8
+
+//*************************************************************************************************************
+
+int x, y, z;
+
+cout << "Enter 3 numbers : " ; cin >> x >> y >> z;
+
+switch (x >= y && x >= z) {
+
+case 1: cout << x << "is the lrgest \n";
+    break;
+
+case 0: switch (y >= x && y >= z) {
+case 1: cout << y << "is the lrgest \n";
+    break;
+
+case 0: switch (z >= x && z >= y) {
+case 1: cout << z << "is the larget \n";
+}
+    break;
+}
+}
+
+         ******************************************************************************
+
+                                           Thank you 
+
+*******************************************************************************************************************
+
