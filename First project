@@ -1,0 +1,116 @@
+
+*******************************************************************************************************************
+//  Problem 1   
+***************************************************************************************************************
+
+string pass = "1234";
+string inputPass;
+int atempt = 0;
+double amount = 10000; 
+int shoice;
+int num;
+
+
+while (atempt < 3) {
+    cout << "Enter password :";
+    cin >> inputPass;
+
+    if (inputPass == pass)
+    {
+        cout << "Password verified successfully";
+        break;
+    }
+    else {
+        atempt++;
+        cout << "Wrong password . The remainig attempts :" << (3 - atempt) << endl;
+    }
+    if (atempt == 3 )
+    {
+        cout << "Your account has been locked "<< endl;
+        return 0;
+    }
+   
+
+}
+
+do
+{
+    
+    cout << "====== Welcome ATM SISTEEM ======";
+   
+    cout << "Enter \n 1- Deposit \n 2- withdraw \n 3- Get Amount \n 4- exit ";
+    cin >> shoice;
+    
+    switch (shoice) {
+    case 1:cout << "Enter your amount to deposit :";
+        cin >> num;
+        amount += num;
+        cout << "successful operation " << num << endl;
+        break;
+    case 2:cout << "Enter your amount to withdrow :";
+        cin >> num;
+        if (num > amount)
+        {
+            cout << "you can't withdraw";
+        }
+        else {
+            amount -= num;
+            cout << "successful operation " << num << endl;
+        }
+        break;
+    case 3:cout << "Enter your amount = " << amount << endl ;
+        break;
+    case 4:cout << "Thanks for useng our bank ";
+        break;
+    default:cout << "Invaled shoice \n";
+    }
+
+} while (shoice !=4);
+
+
+
+
+
+*******************************************************************************************************************
+//  Problem 2   
+***************************************************************************************************************
+
+double num1 = 0  , num2 = 0 , num3 = 0  ;
+int shoice;
+double sum = 0;
+double avg;
+
+
+do
+{
+    cout << "1-Enter student grades \n 2- Calculate average \n 3-Check pass or fail \n 4-Exit  \n";
+    cin >> shoice;
+
+    switch(shoice){
+    case 1: cout << "Enter student grades :";
+        cin >> num1 >> num2 >> num3;
+        break;
+    case 2:cout << "Calculate average :";
+        avg = (num1 + num2 + num3) / 3.0;
+        cout << "Average = " << avg << endl;
+        break;
+    case 3:cout << "Check pass or fail : ";
+        if (avg >= 50)
+        {
+            cout << "Passed";
+        }
+        else {
+            cout << "Failed";
+        }
+        break;
+    case 4:cout << "Thanks ";
+        break;
+    default:cout << "Invaled shoice \n";
+       
+   }
+
+
+} while (shoice != 4);
+
+
+
