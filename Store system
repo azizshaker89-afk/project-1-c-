@@ -1,0 +1,72 @@
+
+*******************************************************************************************************************
+//  Store system 
+***************************************************************************************************************
+int n = 5;
+
+
+int productIds[] = { 201, 202, 203, 204, 205 };
+int quantities[] = { 15, 3, 20, 0, 7 };
+int prices[] = { 120, 250, 75, 300, 50 };
+string ProductName[] = { "Cola" , "Rice" , "Tea" , "Pasta" , "Oil"};
+
+for (int i = 0; i < n; i++)
+{
+    cout << "ID : " << productIds[i] << endl;
+    cout << "name : " << ProductName[i] << endl;
+    cout << "quantities : " << quantities[i] << endl; 
+    cout << "prices : " << prices[i] << endl; 
+
+}
+cout << " \n  ------------------------------------- \n";
+
+int target ; 
+int index = -1 ;
+bool found = false ; 
+cout << "Enter id to search: "; cin >> target;
+
+for (int i = 0; i < n ; i++)
+{
+    if (productIds[i] == target)
+    {
+        found = true;
+        index = i;
+        break;
+    }
+
+}
+if (found)
+{
+    cout << "Product Found!\n";
+
+    cout << "ID : " << productIds[index] << endl;
+    cout << "name : " << ProductName[index] << endl;
+    cout << "quantities : " << quantities[index] << endl;
+    cout << "prices : " << prices[index] << endl;
+
+}
+else
+{
+    cout << "Product Not Found!\n";
+}
+cout << "\n-------------------------------------\n";
+
+int out_stok = 0;
+for (int  i = 0; i <  n; i++)
+{
+    if (quantities[i] == 0) {
+        out_stok++;
+    }
+}
+cout << "Out of stock items: " << out_stok << endl;
+
+
+int low_stok = 0;
+
+for (int i = 0; i < n; i++)
+{
+    if (quantities[i] < 5) {
+        low_stok++;
+    }
+}
+cout << "Low stock items : " << low_stok << endl;
